@@ -1,0 +1,44 @@
+\chapter{Introducción}
+
+Las redes neuronales (también conocidas como sistemas conexionistas) son un modelo computacional basado en un gran conjunto de unidades neuronales simples (neuronas artificiales), de forma aproximadamente análoga al comportamiento observado en los axones de las neuronas en los cerebros biológicos.
+
+\bigskip
+El objetivo de una red neuronal es resolver los problemas de la misma manera que el cerebro humano, aunque las redes neuronales son más abstractas. Los proyectos de redes neuronales modernas suelen trabajar con unos pocos miles a unos pocos millones de unidades neuronales y millones de conexiones, que sigue siendo varios órdenes de magnitud menos complejo que el cerebro humano y más cercano a la potencia de cálculo de un gusano.
+
+\bigskip
+Hoy día las redes neuronales son ampliamente utilizadas para el reconocimiento de patrones. Uno de los más típicos ejemplos de red neuronal se basa en la base de datos MNIST\footnote{\url{http://yann.lecun.com/exdb/mnist/}} que es considerado el ``Hola mundo'' de la Inteligencia Artificial.
+
+\bigskip
+El conjunto de entrenamiento de dicha base de datos contiene 60.000 ejemplos etiquetados. Los ejemplos de entrenamiento son imágenes normalizadas de 28x28 píxeles y se encuentran en el fichero ``train-images-idx3-ubyte'', mientras que las etiquetas correspondientes a los ejemplos se pueden encontrar en el fichero ``train-labels-idx1-ubyte''.
+
+\bigskip
+El conjunto de prueba, almacenado en el mismo formato que el conjunto de entrenamiento, puede encontrarlo en los ficheros ``t10k-images-idx3-ubyte'' (imágenes) y ``t10k-labels-idx1-ubyte'' (etiquetas).
+
+\bigskip
+El objetivo de esta práctica es resolver un problema de reconocimiento de patrones utilizando redes neuronales artificiales donde se deberá evaluar el uso de varios tipos de redes neuronales para resolver un problema de OCR\footnote{Optical Character Recognition}.
+
+\bigskip
+En esta práctica podíamos optar por una implementación desde 0 o bien usar una librería ya creada. Antes de tomar una decisión estuve docmentandome sobre el ``estado del arte'' de las librerías de redes neuronales.
+
+\bigskip
+
+\subsection{TensorFlow}
+TensorFlow es una biblioteca de código abierto para aprendizaje automático a través de un rango de tareas, y desarrollado por Google para satisfacer sus necesidades de sistemas capaces de construir y entrenar redes neuronales para detectar y descifrar patrones y correlaciones, análogos al aprendizaje y razonamiento usados por los humanos. Está desarrollada en Python y C++.
+
+\subsection{Theano}
+Theano es una biblioteca de computación numérica para Python. En Theano, los cálculos se expresan usando una sintaxis NumPy y se compilan para funcionar eficientemente en arquitecturas de CPU o GPU.
+
+\subsection{Cognitive Toolkit}
+Microsoft Cognitive Toolkit, anteriormente conocido como CNTK y en ocasiones denominado ``The Microsoft Cognitive Toolkit'', es un marco de aprendizaje profundo desarrollado por Microsoft Research. Microsoft Cognitive Toolkit describe las redes neuronales como una serie de pasos computacionales a través de un gráfico dirigido. Está desarrollada en C++.
+
+\subsection{Keras}
+Keras es una biblioteca de red neuronal de código abierto escrita en Python. Es capaz de ejecutarse sobre MXNet, Deeplearning4j, Tensorflow, CNTK o Theano. Está diseñada para permitir una rápida experimentación con redes neuronales profundas, se enfoca en ser mínimo, modular y extensible. Fue desarrollado como parte del esfuerzo de investigación del proyecto ONEIROS (Sistema Operativo de Robot Inteligente Neuroelectrónico de código abierto), y su principal autor y mantenedor es François Chollet, un ingeniero de Google. Está desarrollada en Python.
+
+\subsection{DeepCL}
+Biblioteca OpenCL para entrenar redes neuronales convolucionales profundas. Está desarrollada en Python.
+
+\subsection{mnist-1lnn}
+Implementación en C de una red neuronal sencilla para resolver el problema de la base de datos MINST. Al estar desarrollada en C es muy veloz en su ejecución a costa de lidiar con una programación a bajo nivel.
+
+\subsection{Deeplearning4j}
+Deeplearning4j es una biblioteca de programación de aprendizaje profundo escrita en Java que provee marco con amplio soporte para algoritmos de aprendizaje profundo.
