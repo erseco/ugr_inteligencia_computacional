@@ -8,7 +8,9 @@ Repositorio de trabajo de la asignatura Inteligencia Computacional del Máster e
   * [Memoria](https://github.com/erseco/ugr_inteligencia_computacional/blob/master/Practica1/memoria/doc.pdf)
   * [Implementación](https://github.com/erseco/ugr_inteligencia_computacional/blob/master/Practica1/mnist.py)
 * Práctica 2: Algoritmos evolutivos. 
-
+  * [Memoria] TODO
+ * [Implementación] TODO
+ 
 ## Teoría
 
-* Lógica difusa aplicada a:
+* Lógica difusa aplicada a: TODO
