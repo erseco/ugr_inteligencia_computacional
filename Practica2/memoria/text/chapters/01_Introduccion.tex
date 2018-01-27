@@ -1,0 +1,46 @@
+\chapter{Introducción}
+
+El objetivo de esta práctica es comprender el funcionamiento de los algoritmos evolutivos, centrándonos concretamente en los algoritmos genéticos. 
+
+\bigskip
+Para ello a nos vamos a enfrentar al problema de la asignación cuadrática o \textbf{QAP} \footnote{Quadratic Assignment Problem} que es un problema fundamental de optimización combinatoria con numerosas aplicaciones. 
+
+\bigskip
+El problema se puede describir de la siguiente forma:
+
+\bigskip
+Supongamos que queremos decidir dónde construir \textbf{n} instalaciones (p.ej. fábricas) y tenemos \textbf{n} posibles localizaciones en las que podemos construir dichas instalaciones. Conocemos las distancias que hay entre cada par de instalaciones y también el flujo de materiales que ha de existir entre ellas. El problema consiste en decidir dónde ubicar cada fábrica para minimizar el coste de transporte de materiales.
+
+\bigskip
+La función de coste seria:
+
+\[ \sum_{i,j} w(i,j) \times d(p(i),p(j)) \]
+
+Siendo:
+
+\begin{itemize}
+	\item $ w(i,j) $ el peso asociado al flujo de materiales transportados desde la instalación \textit{i} a la instalación \textit{j}
+	\item $ d(i,j) $ la distancia de la localización \textit{i} a la \textit{j}
+	\item $ p(i) $ la instalación \textit{i} en una posible solución del problema
+\end{itemize}
+
+\bigskip
+Los casos de prueba han sido obtenidos de la biblioteca QAPLIB\footnote{\url{http://www.seas.upenn.edu/qaplib/}}. Los ficheros tienen el  formato:
+\\ \\
+\texttt{n}
+\\
+\texttt{WWW}\\
+\texttt{WWW}\\
+\texttt{WWW}
+\\
+\texttt{DDD}\\
+\texttt{DDD}\\
+\texttt{DDD}
+\\ \\
+Donde \textit{n} es el tamaño del problema, \textit{W} es la matriz de flujos de material y \textit{D} es la matriz de distancias .
+
+\bigskip
+El objetivo de la práctica es intentar obtener el mejor resultado posible sobre el conjunto de datos de prueba \texttt{tai256c}, como puede deducirse, este problema tiene un espacio de búsqueda de 256!, lo que es igual a $8{,}5781777534284265411908227168123262515778152027948561*10^{506}$, un número lo suficientemente grande como para descartar la posibilidad de resolverlo por fuerza bruta en un tiempo razonable.
+
+\bigskip
+Una solución basada en algoritmos genéticos sería una buena aproximación a  esta resolución. Actualmente la mejor solución obtenida con un algoritmo evolutivo para este problema es la de una permutación con un coste de \texttt{44.759.294}.

@@ -99,3 +99,14 @@ ENV/
 
 # mypy
 .mypy_cache/
+/Practica2/ernesto/qap/nbproject/private/
+
+*.zip
+*.pdf
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
